@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            background-color: rgb(36, 35, 35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .contaner {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .minteu{
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hour{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .days{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .date{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .month{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid 2px rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle, .mcircle, .hcircle, .dcircle, .dacircle, .mocircle {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(35, 36, 36);
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(236, 236, 236);
+        }
+
+        .deg-0 {
+            transform: translate(350px)
+        }
+
+        .deg-6 {
+            transform: rotate(6deg) translate(350px) rotate(-6deg);
+        }
+
+        .deg-12 {
+            transform: rotate(12deg) translate(350px) rotate(-12deg);
+        }
+
+        .deg-18 {
+            transform: rotate(18deg) translate(350px) rotate(-18deg);
+        }
+
+        .deg-24 {
+            transform: rotate(24deg) translate(350px) rotate(-24deg);
+        }
+
+        .deg-30 {
+            transform: rotate(30deg) translate(350px) rotate(-30deg);
+        }
+
+        .deg-36 {
+            transform: rotate(36deg) translate(350px) rotate(-36deg);
+        }
+
+        .deg-42 {
+            transform: rotate(42deg) translate(350px) rotate(-42deg);
+        }
+
+        .deg-48 {
+            transform: rotate(48deg) translate(350px) rotate(-48deg);
+        }
+
+        .deg-54 {
+            transform: rotate(54deg) translate(350px) rotate(-54deg);
+        }
+
+        .deg-60 {
+            transform: rotate(60deg) translate(350px) rotate(-60deg);
+        }
+
+        .deg-66 {
+            transform: rotate(66deg) translate(350px) rotate(-66deg);
+        }
+
+        .deg-72 {
+            transform: rotate(72deg) translate(350px) rotate(-72deg);
+        }
+
+        .deg-78 {
+            transform: rotate(78deg) translate(350px) rotate(-78deg);
+        }
+
+        .deg-84 {
+            transform: rotate(84deg) translate(350px) rotate(-84deg);
+        }
+
+        .deg-90 {
+            transform: rotate(90deg) translate(350px) rotate(-90deg);
+        }
+
+        .deg-96 {
+            transform: rotate(96deg) translate(350px) rotate(-96deg);
+        }
+
+        .deg-102 {
+            transform: rotate(102deg) translate(350px) rotate(-102deg);
+        }
+
+        .deg-108 {
+            transform: rotate(108deg) translate(350px) rotate(-108deg);
+        }
+
+        .deg-114 {
+            transform: rotate(114deg) translate(350px) rotate(-114deg);
+        }
+
+        .deg-120 {
+            transform: rotate(120deg) translate(350px) rotate(-120deg);
+        }
+
+        .deg-126 {
+            transform: rotate(126deg) translate(350px) rotate(-126deg);
+        }
+
+        .deg-132 {
+            transform: rotate(132deg) translate(350px) rotate(-132deg);
+        }
+
+        .deg-138 {
+            transform: rotate(138deg) translate(350px) rotate(-138deg);
+        }
+
+        .deg-144 {
+            transform: rotate(144deg) translate(350px) rotate(-144deg);
+        }
+
+        .deg-150 {
+            transform: rotate(150deg) translate(350px) rotate(-150deg);
+        }
+
+        .deg-156 {
+            transform: rotate(156deg) translate(350px) rotate(-156deg);
+        }
+
+        .deg-162 {
+            transform: rotate(162deg) translate(350px) rotate(-162deg);
+        }
+
+        .deg-168 {
+            transform: rotate(168deg) translate(350px) rotate(-168deg);
+        }
+
+        .deg-174 {
+            transform: rotate(174deg) translate(350px) rotate(-174deg);
+        }
+
+        .deg-180 {
+            transform: rotate(180deg) translate(350px) rotate(-180deg);
+        }
+
+        .deg-186 {
+            transform: rotate(186deg) translate(350px) rotate(-186deg);
+        }
+
+        .deg-192 {
+            transform: rotate(192deg) translate(350px) rotate(-192deg);
+        }
+
+        .deg-198 {
+            transform: rotate(198deg) translate(350px) rotate(-198deg);
+        }
+
+        .deg-204 {
+            transform: rotate(204deg) translate(350px) rotate(-204deg);
+        }
+
+        .deg-210 {
+            transform: rotate(210deg) translate(350px) rotate(-210deg);
+        }
+
+        .deg-216 {
+            transform: rotate(216deg) translate(350px) rotate(-216deg);
+        }
+
+        .deg-222 {
+            transform: rotate(222deg) translate(350px) rotate(-222deg);
+        }
+
+        .deg-228 {
+            transform: rotate(228deg) translate(350px) rotate(-228deg);
+        }
+
+        .deg-234 {
+            transform: rotate(234deg) translate(350px) rotate(-234deg);
+        }
+
+        .deg-240 {
+            transform: rotate(240deg) translate(350px) rotate(-240deg);
+        }
+
+        .deg-246 {
+            transform: rotate(246deg) translate(350px) rotate(-246deg);
+        }
+
+        .deg-252 {
+            transform: rotate(252deg) translate(350px) rotate(-252deg);
+        }
+
+        .deg-258 {
+            transform: rotate(258deg) translate(350px) rotate(-258deg);
+        }
+
+        .deg-264 {
+            transform: rotate(264deg) translate(350px) rotate(-264deg);
+        }
+
+        .deg-270 {
+            transform: rotate(270deg) translate(350px) rotate(-270deg);
+        }
+
+        .deg-276 {
+            transform: rotate(276deg) translate(350px) rotate(-276deg);
+        }
+
+        .deg-282 {
+            transform: rotate(282deg) translate(350px) rotate(-282deg);
+        }
+
+        .deg-288 {
+            transform: rotate(288deg) translate(350px) rotate(-288deg);
+        }
+
+        .deg-294 {
+            transform: rotate(294deg) translate(350px) rotate(-294deg);
+        }
+
+        .deg-300 {
+            transform: rotate(300deg) translate(350px) rotate(-300deg);
+        }
+
+        .deg-306 {
+            transform: rotate(306deg) translate(350px) rotate(-306deg);
+        }
+
+        .deg-312 {
+            transform: rotate(312deg) translate(350px) rotate(-312deg);
+        }
+
+        .deg-318 {
+            transform: rotate(318deg) translate(350px) rotate(-318deg);
+        }
+
+        .deg-324 {
+            transform: rotate(324deg) translate(350px) rotate(-324deg);
+        }
+
+        .deg-330 {
+            transform: rotate(330deg) translate(350px) rotate(-330deg);
+        }
+
+        .deg-336 {
+            transform: rotate(336deg) translate(350px) rotate(-336deg);
+        }
+
+        .deg-342 {
+            transform: rotate(342deg) translate(350px) rotate(-342deg);
+        }
+
+        .deg-348 {
+            transform: rotate(348deg) translate(350px) rotate(-348deg);
+        }
+
+        .deg-354 {
+            transform: rotate(354deg) translate(350px) rotate(-354deg);
+        }
+
+
+
+
+
+
+
+
+        .mdeg-0 {
+            transform: translate(300px)
+        }
+
+        .mdeg-6 {
+            transform: rotate(6deg) translate(300px) rotate(-6deg);
+        }
+
+        .mdeg-12 {
+            transform: rotate(12deg) translate(300px) rotate(-12deg);
+        }
+
+        .mdeg-18 {
+            transform: rotate(18deg) translate(300px) rotate(-18deg);
+        }
+
+        .mdeg-24 {
+            transform: rotate(24deg) translate(300px) rotate(-24deg);
+        }
+
+        .mdeg-30 {
+            transform: rotate(30deg) translate(300px) rotate(-30deg);
+        }
+
+        .mdeg-36 {
+            transform: rotate(36deg) translate(300px) rotate(-36deg);
+        }
+
+        .mdeg-42 {
+            transform: rotate(42deg) translate(300px) rotate(-42deg);
+        }
+
+        .mdeg-48 {
+            transform: rotate(48deg) translate(300px) rotate(-48deg);
+        }
+
+        .mdeg-54 {
+            transform: rotate(54deg) translate(300px) rotate(-54deg);
+        }
+
+        .mdeg-60 {
+            transform: rotate(60deg) translate(300px) rotate(-60deg);
+        }
+
+        .mdeg-66 {
+            transform: rotate(66deg) translate(300px) rotate(-66deg);
+        }
+
+        .mdeg-72 {
+            transform: rotate(72deg) translate(300px) rotate(-72deg);
+        }
+
+        .mdeg-78 {
+            transform: rotate(78deg) translate(300px) rotate(-78deg);
+        }
+
+        .mdeg-84 {
+            transform: rotate(84deg) translate(300px) rotate(-84deg);
+        }
+
+        .mdeg-90 {
+            transform: rotate(90deg) translate(300px) rotate(-90deg);
+        }
+
+        .mdeg-96 {
+            transform: rotate(96deg) translate(300px) rotate(-96deg);
+        }
+
+        .mdeg-102 {
+            transform: rotate(102deg) translate(300px) rotate(-102deg);
+        }
+
+        .mdeg-108 {
+            transform: rotate(108deg) translate(300px) rotate(-108deg);
+        }
+
+        .mdeg-114 {
+            transform: rotate(114deg) translate(300px) rotate(-114deg);
+        }
+
+        .mdeg-120 {
+            transform: rotate(120deg) translate(300px) rotate(-120deg);
+        }
+
+        .mdeg-126 {
+            transform: rotate(126deg) translate(300px) rotate(-126deg);
+        }
+
+        .mdeg-132 {
+            transform: rotate(132deg) translate(300px) rotate(-132deg);
+        }
+
+        .mdeg-138 {
+            transform: rotate(138deg) translate(300px) rotate(-138deg);
+        }
+
+        .mdeg-144 {
+            transform: rotate(144deg) translate(300px) rotate(-144deg);
+        }
+
+        .mdeg-150 {
+            transform: rotate(150deg) translate(300px) rotate(-150deg);
+        }
+
+        .mdeg-156 {
+            transform: rotate(156deg) translate(300px) rotate(-156deg);
+        }
+
+        .mdeg-162 {
+            transform: rotate(162deg) translate(300px) rotate(-162deg);
+        }
+
+        .mdeg-168 {
+            transform: rotate(168deg) translate(300px) rotate(-168deg);
+        }
+
+        .mdeg-174 {
+            transform: rotate(174deg) translate(300px) rotate(-174deg);
+        }
+
+        .mdeg-180 {
+            transform: rotate(180deg) translate(300px) rotate(-180deg);
+        }
+
+        .mdeg-186 {
+            transform: rotate(186deg) translate(300px) rotate(-186deg);
+        }
+
+        .mdeg-192 {
+            transform: rotate(192deg) translate(300px) rotate(-192deg);
+        }
+
+        .mdeg-198 {
+            transform: rotate(198deg) translate(300px) rotate(-198deg);
+        }
+
+        .mdeg-204 {
+            transform: rotate(204deg) translate(300px) rotate(-204deg);
+        }
+
+        .mdeg-210 {
+            transform: rotate(210deg) translate(300px) rotate(-210deg);
+        }
+
+        .mdeg-216 {
+            transform: rotate(216deg) translate(300px) rotate(-216deg);
+        }
+
+        .mdeg-222 {
+            transform: rotate(222deg) translate(300px) rotate(-222deg);
+        }
+
+        .mdeg-228 {
+            transform: rotate(228deg) translate(300px) rotate(-228deg);
+        }
+
+        .mdeg-234 {
+            transform: rotate(234deg) translate(300px) rotate(-234deg);
+        }
+
+        .mdeg-240 {
+            transform: rotate(240deg) translate(300px) rotate(-240deg);
+        }
+
+        .mdeg-246 {
+            transform: rotate(246deg) translate(300px) rotate(-246deg);
+        }
+
+        .mdeg-252 {
+            transform: rotate(252deg) translate(300px) rotate(-252deg);
+        }
+
+        .mdeg-258 {
+            transform: rotate(258deg) translate(300px) rotate(-258deg);
+        }
+
+        .mdeg-264 {
+            transform: rotate(264deg) translate(300px) rotate(-264deg);
+        }
+
+        .mdeg-270 {
+            transform: rotate(270deg) translate(300px) rotate(-270deg);
+        }
+
+        .mdeg-276 {
+            transform: rotate(276deg) translate(300px) rotate(-276deg);
+        }
+
+        .mdeg-282 {
+            transform: rotate(282deg) translate(300px) rotate(-282deg);
+        }
+
+        .mdeg-288 {
+            transform: rotate(288deg) translate(300px) rotate(-288deg);
+        }
+
+        .mdeg-294 {
+            transform: rotate(294deg) translate(300px) rotate(-294deg);
+        }
+
+        .mdeg-300 {
+            transform: rotate(300deg) translate(300px) rotate(-300deg);
+        }
+
+        .mdeg-306 {
+            transform: rotate(306deg) translate(300px) rotate(-306deg);
+        }
+
+        .mdeg-312 {
+            transform: rotate(312deg) translate(300px) rotate(-312deg);
+        }
+
+        .mdeg-318 {
+            transform: rotate(318deg) translate(300px) rotate(-318deg);
+        }
+
+        .mdeg-324 {
+            transform: rotate(324deg) translate(300px) rotate(-324deg);
+        }
+
+        .mdeg-330 {
+            transform: rotate(330deg) translate(300px) rotate(-330deg);
+        }
+
+        .mdeg-336 {
+            transform: rotate(336deg) translate(300px) rotate(-336deg);
+        }
+
+        .mdeg-342 {
+            transform: rotate(342deg) translate(300px) rotate(-342deg);
+        }
+
+        .mdeg-348 {
+            transform: rotate(348deg) translate(300px) rotate(-348deg);
+        }
+
+        .mdeg-354 {
+            transform: rotate(354deg) translate(300px) rotate(-354deg);
+        }
+
+
+
+
+
+
+
+
+
+        .hdeg-0 {
+            transform: translate(250px)
+        }
+
+        .hdeg-15 {
+            transform: rotate(15deg) translate(250px) rotate(-15deg);
+        }
+
+        .hdeg-30 {
+            transform: rotate(30deg) translate(250px) rotate(-30deg);
+        }
+
+        .hdeg-45 {
+            transform: rotate(45deg) translate(250px) rotate(-45deg);
+        }
+
+        .hdeg-60 {
+            transform: rotate(60deg) translate(250px) rotate(-60deg);
+        }
+
+        .hdeg-75 {
+            transform: rotate(75deg) translate(250px) rotate(-75deg);
+        }
+
+        .hdeg-90 {
+            transform: rotate(90deg) translate(250px) rotate(-90deg);
+        }
+
+        .hdeg-105 {
+            transform: rotate(105deg) translate(250px) rotate(-105deg);
+        }
+
+        .hdeg-120 {
+            transform: rotate(120deg) translate(250px) rotate(-120deg);
+        }
+
+        .hdeg-135 {
+            transform: rotate(135deg) translate(250px) rotate(-135deg);
+        }
+
+        .hdeg-150 {
+            transform: rotate(150deg) translate(250px) rotate(-150deg);
+        }
+
+        .hdeg-165 {
+            transform: rotate(165deg) translate(250px) rotate(-165deg);
+        }
+
+        .hdeg-180 {
+            transform: rotate(180deg) translate(250px) rotate(-180deg);
+        }
+
+        .hdeg-195 {
+            transform: rotate(195deg) translate(250px) rotate(-195deg);
+        }
+
+        .hdeg-210 {
+            transform: rotate(210deg) translate(250px) rotate(-210deg);
+        }
+
+        .hdeg-225 {
+            transform: rotate(225deg) translate(250px) rotate(-225deg);
+        }
+
+        .hdeg-240 {
+            transform: rotate(240deg) translate(250px) rotate(-240deg);
+        }
+
+        .hdeg-255 {
+            transform: rotate(255deg) translate(250px) rotate(-255deg);
+        }
+
+        .hdeg-270 {
+            transform: rotate(270deg) translate(250px) rotate(-270deg);
+        }
+
+        .hdeg-285 {
+            transform: rotate(285deg) translate(250px) rotate(-285deg);
+        }
+
+        .hdeg-300 {
+            transform: rotate(300deg) translate(250px) rotate(-300deg);
+        }
+
+        .hdeg-315 {
+            transform: rotate(315deg) translate(250px) rotate(-315deg);
+        }
+
+        .hdeg-330 {
+            transform: rotate(330deg) translate(250px) rotate(-330deg);
+        }
+
+        .hdeg-345 {
+            transform: rotate(345deg) translate(250px) rotate(-345deg);
+        }
+
+        .hdeg-144 {
+            transform: rotate(144deg) translate(250px) rotate(-144deg);
+        }
+      
+
+
+
+
+
+
+        .ddeg-0 {
+            transform:  rotate(13deg) translate(200px) rotate(-13deg)
+        }
+
+        .ddeg-51 {
+            transform: rotate(64.4deg) translate(200px) rotate(-64.4deg);
+        }
+
+        .ddeg-102 {
+            transform: rotate(115.8deg) translate(200px) rotate(-115.8deg);
+        }
+
+        .ddeg-154 {
+            transform: rotate(167.2deg) translate(200px) rotate(-167.2deg);
+        }
+
+        .ddeg-205 {
+            transform: rotate(218.6deg) translate(200px) rotate(-218.6deg);
+        }
+
+        .ddeg-257 {
+            transform: rotate(270deg) translate(200px) rotate(-270deg);
+        }
+
+        .ddeg-308 {
+            transform: rotate(321.4deg) translate(200px) rotate(-321.4deg);
+        }
+        
+
+
+
+
+
+
+
+        .dadeg-0 {
+            transform: rotate(3deg) translate(150px) rotate(-3deg);
+        }
+
+        .dadeg-11 {
+            transform: rotate(14.6deg) translate(150px) rotate(-14.6deg);
+        }
+
+        .dadeg-23 {
+            transform: rotate(26.2deg) translate(150px) rotate(-26.2deg);
+        }
+
+        .dadeg-34 {
+            transform: rotate(37.8deg) translate(150px) rotate(-37.8deg);
+        }
+
+        .dadeg-46 {
+            transform: rotate(49.4deg) translate(150px) rotate(-49.4deg);
+        }
+
+        .dadeg-58 {
+            transform: rotate(61deg) translate(150px) rotate(-61deg);
+        }  
+        
+        .dadeg-69 {
+            transform:  rotate(72.6deg) translate(150px) rotate(-72.6deg)
+        }
+
+        .dadeg-81 {
+            transform: rotate(84.2deg) translate(150px) rotate(-84.2deg);
+        }
+
+        .dadeg-92 {
+            transform: rotate(95.8deg) translate(150px) rotate(-95.8deg);
+        }
+
+        .dadeg-104 {
+            transform: rotate(107.4deg) translate(150px) rotate(-107.4deg);
+        }
+
+        .dadeg-116 {
+            transform: rotate(119deg) translate(150px) rotate(-119deg);
+        }
+
+        .dadeg-127 {
+            transform: rotate(130.6deg) translate(150px) rotate(-130.6deg);
+        }
+        
+        .dadeg-139 {
+            transform:  rotate(142.2deg) translate(150px) rotate(-142.2deg)
+        }
+
+        .dadeg-150 {
+            transform: rotate(153.8deg) translate(150px) rotate(-153.8deg);
+        }
+
+        .dadeg-162 {
+            transform: rotate(165.4deg) translate(150px) rotate(-165.4deg);
+        }
+
+        .dadeg-174 {
+            transform: rotate(177deg) translate(150px) rotate(-177deg);
+        }
+
+        .dadeg-185 {
+            transform: rotate(188.6deg) translate(150px) rotate(-188.6deg);
+        }
+
+        .dadeg-197 {
+            transform: rotate(200.2deg) translate(150px) rotate(-200.2deg);
+        }
+        
+        .dadeg-208 {
+            transform:  rotate(211.8deg) translate(150px) rotate(-211.8deg)
+        }
+
+        .dadeg-220 {
+            transform: rotate(224.4deg) translate(150px) rotate(-224.4deg);
+        }
+
+        .dadeg-232 {
+            transform: rotate(235deg) translate(150px) rotate(-235deg);
+        }
+
+        .dadeg-243 {
+            transform: rotate(247.6deg) translate(150px) rotate(-247.6deg);
+        }
+
+        .dadeg-255 {
+            transform: rotate(258.2deg) translate(150px) rotate(-258.2deg);
+        }
+
+        .dadeg-266 {
+            transform: rotate(269.8deg) translate(150px) rotate(-269.8deg);
+        }
+        
+/* 266.8 */
+
+
+        .dadeg-278 {
+            transform:  rotate(281.4deg) translate(150px) rotate(-281.4deg)
+        }
+
+        .dadeg-290 {
+            transform: rotate(293deg) translate(150px) rotate(-293deg);
+        }
+
+        .dadeg-301 {
+            transform: rotate(304.6deg) translate(150px) rotate(-304.6deg);
+        }
+
+        .dadeg-313 {
+            transform: rotate(316.2deg) translate(150px) rotate(-316.2deg);
+        }
+
+        .dadeg-324 {
+            transform: rotate(327.8deg) translate(150px) rotate(-327.8deg);
+        }
+
+        .dadeg-336 {
+            transform: rotate(339.4deg) translate(150px) rotate(-339.4deg);
+        }
+        .dadeg-348 {
+            transform: rotate(351deg) translate(150px) rotate(-351deg);
+        }
+
+
+
+
+        .modeg-0 {
+            transform: translate(100px) 
+        }
+
+        .modeg-30 {
+            transform: rotate(30deg) translate(100px) rotate(-30deg);
+        }
+
+        .modeg-60 {
+            transform: rotate(60deg) translate(100px) rotate(-60deg);
+        }
+
+        .modeg-90 {
+            transform: rotate(90deg) translate(100px) rotate(-90deg);
+        }
+
+        .modeg-120 {
+            transform: rotate(120deg) translate(100px) rotate(-120deg);
+        }
+
+        .modeg-150 {
+            transform: rotate(150deg) translate(100px) rotate(-150deg);
+        }
+
+        .modeg-180 {
+            transform:  rotate(180deg) translate(100px) rotate(-180deg)
+        }
+
+        .modeg-210 {
+            transform: rotate(210deg) translate(100px) rotate(-210deg);
+        }
+
+        .modeg-240 {
+            transform: rotate(240deg) translate(100px) rotate(-240deg);
+        }
+
+        .modeg-270 {
+            transform: rotate(270deg) translate(100px) rotate(-270deg);
+        }
+
+        .modeg-300 {
+            transform: rotate(300deg) translate(100px) rotate(-300deg);
+        }
+
+        .modeg-330 {
+            transform: rotate(330deg) translate(100px) rotate(-330deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="minteu">
+            <div class="hour">
+                <div class="days">
+                    <div class="date">
+                        <div class="month">
+                            <div class="mocircle modeg-270"   id="mo0">Ja</div>
+                            <div class="mocircle modeg-300"   id="mo1">Fe</div>
+                            <div class="mocircle modeg-330"   id="mo2">Ma</div>
+                            <div class="mocircle modeg-0"     id="mo3">Ap</div>
+                            <div class="mocircle modeg-30"    id="mo4">Ma</div>
+                            <div class="mocircle modeg-60"    id="mo5">Ju</div>
+                            <div class="mocircle modeg-90"    id="mo6">JU</div>
+                            <div class="mocircle modeg-120"   id="mo7">Au</div>
+                            <div class="mocircle modeg-150"   id="mo8">Se</div>
+                            <div class="mocircle modeg-180"   id="mo9">Oc</div>
+                            <div class="mocircle modeg-210"   id="mo10">No</div>
+                            <div class="mocircle modeg-240"   id="mo11">De</div> 
+                        </div>
+                        <div class="dacircle dadeg-0"    id="da9">09</div>
+                        <div class="dacircle dadeg-11"   id="da10">10</div>
+                        <div class="dacircle dadeg-23"   id="da11">11</div>
+                        <div class="dacircle dadeg-34"   id="da12">12</div>
+                        <div class="dacircle dadeg-46"   id="da13">13</div>
+                        <div class="dacircle dadeg-58"   id="da14">14</div>
+                        <div class="dacircle dadeg-69"   id="da15">15</div>
+                        <div class="dacircle dadeg-81"   id="da16">16</div>
+                        <div class="dacircle dadeg-92"   id="da17">17</div>
+                        <div class="dacircle dadeg-104"  id="da18">18</div>
+                        <div class="dacircle dadeg-116"  id="da19">19</div>
+                        <div class="dacircle dadeg-127"  id="da20">20</div>
+                        <div class="dacircle dadeg-139"  id="da21">21</div>
+                        <div class="dacircle dadeg-150"  id="da22">22</div>
+                        <div class="dacircle dadeg-162"  id="da23">23</div>
+                        <div class="dacircle dadeg-174"  id="da24">24</div>
+                        <div class="dacircle dadeg-185"  id="da25">25</div>
+                        <div class="dacircle dadeg-197"   id="da26">26</div>
+                        <div class="dacircle dadeg-208"   id="da27">27</div>
+                        <div class="dacircle dadeg-220"   id="da28">28</div>
+                        <div class="dacircle dadeg-232"   id="da29">29</div>
+                        <div class="dacircle dadeg-243"   id="da30">30</div>
+                        <div class="dacircle dadeg-255"   id="da31">31</div>
+                        <div class="dacircle dadeg-266"   id="da1">01</div>
+                        <div class="dacircle dadeg-278"   id="da2">02</div>
+                        <div class="dacircle dadeg-290"   id="da3">03</div>                        
+                        <div class="dacircle dadeg-301"   id="da4">04</div>
+                        <div class="dacircle dadeg-313"   id="da5">05</div>
+                        <div class="dacircle dadeg-324"   id="da6">06</div>
+                        <div class="dacircle dadeg-336"   id="da7">07</div>
+                        <div class="dacircle dadeg-348"   id="da8">08</div>                        
+                    </div>
+                    <div class="dcircle ddeg-0"    id="d2">Tu</div>
+                    <div class="dcircle ddeg-51"   id="d3">We</div>
+                    <div class="dcircle ddeg-102"  id="d4">Th</div>
+                    <div class="dcircle ddeg-154"   id="d5">Fr</div>
+                    <div class="dcircle ddeg-205"   id="d6">St</div>
+                    <div class="dcircle ddeg-257"   id="d0">Su</div>
+                    <div class="dcircle ddeg-308"   id="d1">Mo</div>
+                </div>
+                <div class="hcircle hdeg-0"    id="h6">06</div>
+                <div class="hcircle hdeg-15"   id="h7">07</div>
+                <div class="hcircle hdeg-30"   id="h8">08</div>
+                <div class="hcircle hdeg-45"   id="h9">09</div>
+                <div class="hcircle hdeg-60"   id="h10">10</div>
+                <div class="hcircle hdeg-75"   id="h11">11</div>
+                <div class="hcircle hdeg-90"   id="h12">12</div>
+                <div class="hcircle hdeg-105"  id="h13">13</div>
+                <div class="hcircle hdeg-120"  id="h14">14</div>
+                <div class="hcircle hdeg-135"  id="h15">15</div>
+                <div class="hcircle hdeg-150"  id="h16">16</div>
+                <div class="hcircle hdeg-165"  id="h17">17</div>
+                <div class="hcircle hdeg-180"  id="h18">18</div>
+                <div class="hcircle hdeg-195"  id="h19">19</div>
+                <div class="hcircle hdeg-210"  id="h20">20</div>
+                <div class="hcircle hdeg-225"  id="h21">21</div>
+                <div class="hcircle hdeg-240"  id="h22">22</div>
+                <div class="hcircle hdeg-255"  id="h23">23</div>
+                <div class="hcircle hdeg-270"  id="h0">00</div>
+                <div class="hcircle hdeg-285"  id="h1">01</div>
+                <div class="hcircle hdeg-300"  id="h2">02</div>
+                <div class="hcircle hdeg-315"  id="h3">03</div>
+                <div class="hcircle hdeg-330"  id="h4">04</div>
+                <div class="hcircle hdeg-345"  id="h5">05</div>
+            </div>
+            <div class="mcircle mdeg-0"   id="m15">15</div>
+            <div class="mcircle mdeg-6"   id="m16">16</div>
+            <div class="mcircle mdeg-12"  id="m17">17</div>
+            <div class="mcircle mdeg-18"  id="m18">18</div>
+            <div class="mcircle mdeg-24"  id="m19">19</div>
+            <div class="mcircle mdeg-30"  id="m20">20</div>
+            <div class="mcircle mdeg-36"  id="m21">21</div>
+            <div class="mcircle mdeg-42"  id="m22">22</div>
+            <div class="mcircle mdeg-48"  id="m23">23</div>
+            <div class="mcircle mdeg-54"  id="m24">24</div>
+            <div class="mcircle mdeg-60"  id="m25">25</div>
+            <div class="mcircle mdeg-66"  id="m26">26</div>
+            <div class="mcircle mdeg-72"  id="m27">27</div>
+            <div class="mcircle mdeg-78"  id="m28">28</div>
+            <div class="mcircle mdeg-84"  id="m29">29</div>
+            <div class="mcircle mdeg-90"  id="m30">30</div>
+            <div class="mcircle mdeg-96"  id="m31">31</div>
+            <div class="mcircle mdeg-102" id="m32">32</div>
+            <div class="mcircle mdeg-108" id="m33">33</div>
+            <div class="mcircle mdeg-114" id="m34">34</div>
+            <div class="mcircle mdeg-120" id="m35">35</div>
+            <div class="mcircle mdeg-126" id="m36">36</div>
+            <div class="mcircle mdeg-132" id="m37">37</div>
+            <div class="mcircle mdeg-138" id="m38">38</div>
+            <div class="mcircle mdeg-144" id="m39">39</div>
+            <div class="mcircle mdeg-150" id="m40">40</div>
+            <div class="mcircle mdeg-156" id="m41">41</div>
+            <div class="mcircle mdeg-162" id="m42">42</div>
+            <div class="mcircle mdeg-168" id="m43">43</div>
+            <div class="mcircle mdeg-174" id="m44">44</div>
+            <div class="mcircle mdeg-180" id="m45">45</div>
+            <div class="mcircle mdeg-186" id="m46">46</div>
+            <div class="mcircle mdeg-192" id="m47">47</div>
+            <div class="mcircle mdeg-198" id="m48">48</div>
+            <div class="mcircle mdeg-204" id="m49">49</div>
+            <div class="mcircle mdeg-210" id="m50">50</div>
+            <div class="mcircle mdeg-216" id="m51">51</div>
+            <div class="mcircle mdeg-222" id="m52">52</div>
+            <div class="mcircle mdeg-228" id="m53">53</div>
+            <div class="mcircle mdeg-234" id="m54">54</div>
+            <div class="mcircle mdeg-240" id="m55">55</div>
+            <div class="mcircle mdeg-246" id="m56">56</div>
+            <div class="mcircle mdeg-252" id="m57">57</div>
+            <div class="mcircle mdeg-258" id="m58">58</div>
+            <div class="mcircle mdeg-264" id="m59">59</div>
+            <div class="mcircle mdeg-270" id="m0">00</div>
+            <div class="mcircle mdeg-276" id="m1">01</div>
+            <div class="mcircle mdeg-282" id="m2">02</div>
+            <div class="mcircle mdeg-288" id="m3">03</div>
+            <div class="mcircle mdeg-294" id="m4">04</div>
+            <div class="mcircle mdeg-300" id="m5">05</div>
+            <div class="mcircle mdeg-306" id="m6">06</div>
+            <div class="mcircle mdeg-312" id="m7">07</div>
+            <div class="mcircle mdeg-318" id="m8">08</div>
+            <div class="mcircle mdeg-324" id="m9">09</div>
+            <div class="mcircle mdeg-330" id="m10">10</div>
+            <div class="mcircle mdeg-336" id="m11">11</div>
+            <div class="mcircle mdeg-342" id="m12">12</div>
+            <div class="mcircle mdeg-348" id="m13">13</div>
+            <div class="mcircle mdeg-354" id="m14">14</div>
+        </div>
+        <div class="circle deg-0" id="15">15</div>
+        <div class="circle deg-6" id="16">16</div>
+        <div class="circle deg-12" id="17">17</div>
+        <div class="circle deg-18" id="18">18</div>
+        <div class="circle deg-24" id="19">19</div>
+        <div class="circle deg-30" id="20">20</div>
+        <div class="circle deg-36" id="21">21</div>
+        <div class="circle deg-42" id="22">22</div>
+        <div class="circle deg-48" id="23">23</div>
+        <div class="circle deg-54" id="24">24</div>
+        <div class="circle deg-60" id="25">25</div>
+        <div class="circle deg-66" id="26">26</div>
+        <div class="circle deg-72" id="27">27</div>
+        <div class="circle deg-78" id="28">28</div>
+        <div class="circle deg-84" id="29">29</div>
+        <div class="circle deg-90" id="30">30</div>
+        <div class="circle deg-96" id="31">31</div>
+        <div class="circle deg-102" id="32">32</div>
+        <div class="circle deg-108" id="33">33</div>
+        <div class="circle deg-114" id="34">34</div>
+        <div class="circle deg-120" id="35">35</div>
+        <div class="circle deg-126" id="36">36</div>
+        <div class="circle deg-132" id="37">37</div>
+        <div class="circle deg-138" id="38">38</div>
+        <div class="circle deg-144" id="39">39</div>
+        <div class="circle deg-150" id="40">40</div>
+        <div class="circle deg-156" id="41">41</div>
+        <div class="circle deg-162" id="42">42</div>
+        <div class="circle deg-168" id="43">43</div>
+        <div class="circle deg-174" id="44">44</div>
+        <div class="circle deg-180" id="45">45</div>
+        <div class="circle deg-186" id="46">46</div>
+        <div class="circle deg-192" id="47">47</div>
+        <div class="circle deg-198" id="48">48</div>
+        <div class="circle deg-204" id="49">49</div>
+        <div class="circle deg-210" id="50">50</div>
+        <div class="circle deg-216" id="51">51</div>
+        <div class="circle deg-222" id="52">52</div>
+        <div class="circle deg-228" id="53">53</div>
+        <div class="circle deg-234" id="54">54</div>
+        <div class="circle deg-240" id="55">55</div>
+        <div class="circle deg-246" id="56">56</div>
+        <div class="circle deg-252" id="57">57</div>
+        <div class="circle deg-258" id="58">58</div>
+        <div class="circle deg-264" id="59">59</div>
+        <div class="circle deg-270" id="0">00</div>
+        <div class="circle deg-276" id="1">01</div>
+        <div class="circle deg-282" id="2">02</div>
+        <div class="circle deg-288" id="3">03</div>
+        <div class="circle deg-294" id="4">04</div>
+        <div class="circle deg-300" id="5">05</div>
+        <div class="circle deg-306" id="6">06</div>
+        <div class="circle deg-312" id="7">07</div>
+        <div class="circle deg-318" id="8">08</div>
+        <div class="circle deg-324" id="9">09</div>
+        <div class="circle deg-330" id="10">10</div>
+        <div class="circle deg-336" id="11">11</div>
+        <div class="circle deg-342" id="12">12</div>
+        <div class="circle deg-348" id="13">13</div>
+        <div class="circle deg-354" id="14">14</div>
+    </div>
+</body>
+<script>
+    
+    function getTime() {
+        const date = new Date();
+        // console.log(date);
+
+
+        var sec = date.getSeconds();
+        var secString = sec.toString();
+        var lesSecond = sec - 1;
+        var lesSecondString = lesSecond.toString();
+        if (secString === '0') {
+            lesSecondString  = '59'
+        }
+        var lesetId = document.getElementById(lesSecondString).style.backgroundColor = 'rgb(36, 35, 35)'
+        var id = document.getElementById(secString).style.backgroundColor = '#B1D512'
+
+
+        var minute = date.getMinutes();
+        var leserMinute = minute - 1;
+        leserMinute = leserMinute.toString();
+        if(leserMinute === '0'){
+            leserMinute = '59' 
+        }
+        leserMinute = 'm' + leserMinute;
+        var minutesString = minute.toString();
+        minutesString = 'm' + minutesString;
+        var lesetMinuteId = document.getElementById(leserMinute).style.backgroundColor = 'rgb(36, 35, 35)'
+        var minuteid = document.getElementById(minutesString).style.backgroundColor ='#FF00FF'
+
+
+        var hour = date.getHours()
+        var leserHour = hour - 1;
+        leserHour = leserHour.toString();
+        if(leserHour === '0'){
+            leserHour = '23'
+        }
+        leserHour = 'h' + leserHour;
+        hour = hour.toString();
+        hour = 'h' + hour;
+        var lesethourId = document.getElementById(leserHour).style.backgroundColor = 'rgb(36, 35, 35)'
+        var minuteid = document.getElementById(hour).style.backgroundColor ='#00A6FF'
+
+
+        var day = date.getDay();
+        var lesrday = day - 1;
+        lesrday = lesrday.toString();
+        if (lesrday === '-1') {
+            lesrday = '6'
+        }
+        lesrday = 'd'+ lesrday;
+        day = day.toString();
+        day = 'd' + day;
+        var lesetdayId = document.getElementById(lesrday).style.backgroundColor = 'rgb(36, 35, 35)'
+        var dayid = document.getElementById(day).style.backgroundColor ='#F46036'
+
+
+        
+        var currentdate = date.getDate();
+        var lesrcurrentdate = currentdate - 1;
+        lesrcurrentdate = lesrcurrentdate.toString();
+        if (lesrcurrentdate === '1') {
+            lesrcurrentdate = '31'
+        }
+        lesrcurrentdate = 'da'+ lesrcurrentdate;
+        currentdate = currentdate.toString();
+        currentdate = 'da' + currentdate;
+        var lesetcurrentdateId = document.getElementById(lesrcurrentdate).style.backgroundColor = 'rgb(36, 35, 35)'
+        var currentdateid = document.getElementById(currentdate).style.backgroundColor ='#9F2020'
+      
+
+
+        var month = date.getMonth()
+        var leserMonth = month - 1;
+        leserMonth = leserMonth.toString();
+        if (leserMonth === '0') {
+            leserMonth = '11'
+        }
+        leserMonth = 'mo'+ leserMonth;
+        month = month.toString();
+        month = 'mo' + month;
+        var lesetmonthId = document.getElementById(leserMonth).style.backgroundColor = 'rgb(36, 35, 35)'
+        var monthid = document.getElementById(month).style.backgroundColor ='#1A9020'
+    }
+
+   setInterval(getTime, 1000);
+
+
+
+  
+</script>
+
+</html>
